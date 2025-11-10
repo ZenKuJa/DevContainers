@@ -1,7 +1,7 @@
 services:
     code-server:
         build: .
-        image: java-dev-env
+        image: zenkuja/java-dev-container:latest
 
         ports:
             - "8080:8080"
@@ -10,7 +10,7 @@ services:
             - PASSWORD=dein-sicheres-passwort
 
         volumes:
-            - ./project-data:/home/coder/project
+            - ./project-data:/home/javaDev/project
             - /var/run/docker.sock:/var/run/docker.sock
 
         restart: unless-stopped

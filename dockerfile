@@ -28,7 +28,9 @@ RUN code-server --install-extension vscjava.vscode-java-pack && \
     code-server --install-extension shardulm94.trailing-spaces\
     code-server --install-extension ms-azuretools.vscode-docker && \
     code-server --install-extension eamodio.gitlens && \
-    code-server --install-extension redhat.vscode-yaml && \
+    code-server --install-extension formulahendry.code-runner && \
+    code-server --install-extension redhat.vscode-yaml
+
 EXPOSE 8080
 
 CMD ["code-server", "--bind-addr", "0.0.0.0:8080"]
