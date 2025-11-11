@@ -21,7 +21,7 @@ echo \
 echo "[ 4/10] - System Update"
 sudo apt-get update -y
 
-echo "[ 5/10] - Install Docker Compose"
+echo "[ 5/10] - Install Docker and Docker-Compose"
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 echo "[ 6/10] - Add User to Docker Group"
