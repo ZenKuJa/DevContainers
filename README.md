@@ -1,2 +1,10 @@
 # DevContainers
-This are my DevContainers designed to run on some kind of vm for remote access.
+
+# Setup
+
+## Debian/ Ubuntu specific script
+```console
+curl -Ls -o setup.sh "https://raw.githubusercontent.com/ZenKuJa/DevContainers/main/Java-Dev-Container/setup.sh"
+chmod +x setup.sh
+./setup.sh
+```
