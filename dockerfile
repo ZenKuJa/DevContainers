@@ -16,7 +16,8 @@ RUN curl -fsSL https://code-server.dev/install.sh | sh
 
 RUN useradd -m -s /bin/bash javaDev \
     && usermod -aG sudo javaDev \
-    && usermod -aG docker javaDev
+    && usermod -aG docker javaDev \
+    && echo "javaDev ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/javadev-nopasswd
 
 USER javaDev
 WORKDIR /home/javaDev
